@@ -1,1 +1,19 @@
-body{background-image:url("../res/background.png")}.container-fluid{padding-top:15px;padding-bottom:15px}p{margin:auto;font-size:larger}.row{padding-top:10px;padding-bottom:10px}.img-link{width:100px;height:100px}
+body {
+  background-image: url("../res/background.png");
+}
+.container-fluid {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+p {
+  margin: auto;
+  font-size: larger;
+}
+.row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.img-link {
+  width: 100px;
+  height: 100px;
+}
