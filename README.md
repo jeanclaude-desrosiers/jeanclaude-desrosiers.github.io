@@ -1,3 +1,3 @@
 # Personal Website
 
-live version [here](www.jclaude.xyz)
+live version [here](https://www.jclaude.xyz)
