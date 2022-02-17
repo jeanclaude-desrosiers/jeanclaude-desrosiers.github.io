@@ -1,7 +1,8 @@
-body {
-  background-image: url("../res/background.png");
+html, body, .container-fluid {
+  height: 100%;
+  width: 100%;
 }
-.container-fluid {
+body {
   padding: 15px;
 }
 p {
@@ -11,6 +12,9 @@ p {
 .row {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+#bottom-links {
+  margin-top: 40px;
 }
 .img-link {
   width: 100px;
