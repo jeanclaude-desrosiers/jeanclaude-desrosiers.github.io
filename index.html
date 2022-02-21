@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr-CA">
 
 <head>
+    <meta name="author" content="Jean-Claude Desrosiers">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -19,18 +20,20 @@
 <body>
     <nav>
         <a href="https://raw.githubusercontent.com/jeanclaude-desrosiers/my-cv/master/fr/resume.pdf" hreflang="fr-CA"
-            type="application/pdf" target="_blank" class="card-link">
-            <img src="res/doc.png" alt="cv" decoding="async" class="img-link">
+            type="application/pdf" target="_blank">
+            Curriculum Vitae
         </a>
-        <a href="mailto: jean-claude.desrosiers@jclaude.xyz">
-            <img src="res/mail.png" alt="email" decoding="async" class="img-link">
+        <a href="mailto:jean-claude.desrosiers@jclaude.xyz">
+            Courriel
         </a>
-        <a href="en/index.html" role="button" class="btn btn-primary btn-lg">English</a>
+        <a href="en/index.html" hreflang="en-CA" rel="alternate" type="text/html" target="_self"
+            referrerpolicy="same-origin">English</a>
     </nav>
     <main>
         <h1>Nom du Joueur : <span>Jean-Claude</span></h1>
 
-        <img src="res/profile.jpg" alt="C'est moi!">
+        <!-- width/height is used so that, the page won't jitter around when the image is loading -->
+        <img src="res/profile.jpg" alt="C'est moi!" width="250" height="250" decoding="async" loading="lazy">
 
         <section>
             <h2>Attributs</h2>
@@ -38,17 +41,20 @@
             <div class="attribut">
                 <p>Point de Vie</p>
                 <p>42</p>
-                <img src="res/img/hp.png" alt="Un icône de coeur">
+                <img src="res/img/hp.png" alt="Un icône de coeur" width="250" height="250" decoding="async"
+                    loading="lazy">
             </div>
             <div class="attribut">
                 <p>Vitesse</p>
                 <p>25</p>
-                <img src="res/img/speed.png" alt="Figurine qui court">
+                <img src="res/img/speed.png" alt="Figurine qui court" width="250" height="250" decoding="async"
+                    loading="lazy">
             </div>
             <div class="attribut">
                 <p>Armure</p>
                 <p>14</p>
-                <img src="res/img/shield.png" alt="Un icône de bouclier">
+                <img src="res/img/shield.png" alt="Un icône de bouclier" width="250" height="250" decoding="async"
+                    loading="lazy">
             </div>
         </section>
 
@@ -56,7 +62,8 @@
             <h2>Classe</h2>
 
             <p>Mage</p>
-            <img src="res/img/wizard.png" alt="Un chapeau de mage">
+            <img src="res/img/wizard.png" alt="Un chapeau de mage" width="250" height="250" decoding="async"
+                loading="lazy">
         </section>
 
         <section>
@@ -85,6 +92,13 @@
             <h2>Inventaire</h2>
 
             <table>
+                <colgroup>
+                    <col class="even-col">
+                    <col class="odd-col">
+                    <col class="even-col">
+                    <col class="odd-col">
+                    <col class="even-col">
+                </colgroup>
                 <thead>
                     <tr>
                         <th>Catégorie</th>
@@ -99,7 +113,8 @@
                         <td>Bijou</td>
                         <td>L'anneau unique</td>
                         <td>1kg</td>
-                        <td>Dès que vous l'enfilez, des chuchotements résonnent dans votre tête, c'est à s'en jeter dans un volcan...</td>
+                        <td>Dès que vous l'enfilez, des chuchotements résonnent dans votre tête, c'est à s'en jeter dans
+                            un volcan...</td>
                         <td>État de confusion</td>
                     </tr>
                     <tr>
@@ -111,7 +126,9 @@
                     </tr>
                     <tr>
                         <td>Divers</td>
-                        <td><a href="https://fr.wikipedia.org/wiki/M%C3%A9thode_du_canard_en_plastique">Canard en Plastique</a></td>
+                        <td><a href="https://fr.wikipedia.org/wiki/M%C3%A9thode_du_canard_en_plastique" hreflang="fr"
+                                type="text/html" target="_blank" referrerpolicy="no-referrer">Canard en
+                                Plastique</a></td>
                         <td>1kg</td>
                         <td>Le pouvoir occulte de ce ridicule canard en plastique stimule vos neurones</td>
                         <td>+2 d'intelligence</td>
@@ -131,6 +148,13 @@
             <h2>Sorts Magiques</h2>
 
             <table>
+                <colgroup>
+                    <col class="even-col">
+                    <col class="odd-col">
+                    <col class="even-col">
+                    <col class="odd-col">
+                    <col class="even-col">
+                </colgroup>
                 <thead>
                     <tr>
                         <th>Coût</th>
@@ -157,7 +181,8 @@
                     </tr>
                     <tr>
                         <td>150</td>
-                        <td><a href="https://fr.wikipedia.org/wiki/Fork_bomb">Fork Bomb</a></td>
+                        <td><a href="https://fr.wikipedia.org/wiki/Fork_bomb" hreflang="fr" type="text/html"
+                                target="_blank" referrerpolicy="no-referrer">Fork Bomb</a></td>
                         <td>20m</td>
                         <td>La cible voit ses ressources consommées par des pensées récursivement existentielles</td>
                         <td>La cible est paralysée</td>
@@ -171,16 +196,20 @@
                     </tr>
                     <tr>
                         <td>25</td>
-                        <td><a href="https://fr.wikipedia.org/wiki/M%C3%A9thode_agile">Agilité</a></td>
+                        <td><a href="https://fr.wikipedia.org/wiki/M%C3%A9thode_agile" hreflang="fr" type="text/html"
+                                target="_blank" referrerpolicy="no-referrer">Agilité</a></td>
                         <td>Soi-même</td>
                         <td>Votre méthodologie vous permet d'être à l'affut des mouvements de l'adversaire</td>
                         <td>+5 dextérité pour ce tour</td>
                     </tr>
                     <tr>
                         <td>250</td>
-                        <td><a href="https://fr.wikipedia.org/wiki/Pointeur_(programmation)">Pointeur</a></td>
+                        <td><a href="https://fr.wikipedia.org/wiki/Pointeur_(programmation)" hreflang="fr"
+                                type="text/html" target="_blank" referrerpolicy="no-referrer">Pointeur</a></td>
                         <td>60m</td>
-                        <td>Votre "<a href="https://linux.die.net/man/3/realloc">realloc()</a>" réussit sur la cible</td>
+                        <td>Votre "<a href="https://linux.die.net/man/3/realloc" hreflang="en" type="text/html"
+                                target="_blank" referrerpolicy="no-referrer">realloc()</a>" réussit sur la cible
+                        </td>
                         <td>La cible est téléportée à l'endroit pointé</td>
                     </tr>
                 </tbody>
