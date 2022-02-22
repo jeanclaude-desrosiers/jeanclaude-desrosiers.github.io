@@ -21,15 +21,16 @@
     <main>
         <nav>
             <a href="https://raw.githubusercontent.com/jeanclaude-desrosiers/my-cv/master/fr/resume.pdf"
-                hreflang="fr-CA" type="application/pdf" target="_blank">
+                hreflang="fr-CA" type="application/pdf" target="_blank" title="Mon C.V.">
                 Curriculum Vitae
             </a>
-            <a href="mailto:jean-claude.desrosiers@jclaude.xyz">
+            <a href="mailto:jean-claude.desrosiers@jclaude.xyz" title="Mon courriel professionnel">
                 Courriel
             </a>
             <a href="en/index.html" hreflang="en-CA" rel="alternate" type="text/html" target="_self"
-                referrerpolicy="same-origin">English</a>
+                referrerpolicy="same-origin" title="Access this page in english">English</a>
         </nav>
+
         <header>
             <!-- width/height is used so that, the page won't jitter around when the image is loading -->
             <img src="res/profile.jpg" alt="C'est moi!" width="250" height="250" decoding="async" loading="lazy">
@@ -37,38 +38,32 @@
             <h1>Nom du Joueur : <span>Jean-Claude</span></h1>
         </header>
 
-        <section>
+        <section id="attributes">
             <h2>Attributs</h2>
 
-            <div class="attribut">
-                <p>Point de Vie</p>
-                <p>42</p>
+            <figure class="attribute">
+                <figcaption>Classe<br><span>Mage</span></figcaption>
+                <img src="res/img/wizard.png" alt="Un chapeau de mage" width="250" height="250" decoding="async"
+                    loading="lazy">
+            </figure>
+            <figure class="attribute">
+                <figcaption>Points de vie<br><span>42</span></figcaption>
                 <img src="res/img/hp.png" alt="Un icône de coeur" width="250" height="250" decoding="async"
                     loading="lazy">
-            </div>
-            <div class="attribut">
-                <p>Vitesse</p>
-                <p>25</p>
+            </figure>
+            <figure class="attribute">
+                <figcaption>Vitesse<br><span>25</span></figcaption>
                 <img src="res/img/speed.png" alt="Figurine qui court" width="250" height="250" decoding="async"
                     loading="lazy">
-            </div>
-            <div class="attribut">
-                <p>Armure</p>
-                <p>14</p>
+            </figure>
+            <figure class="attribute">
+                <figcaption>Armure<br><span>14</span></figcaption>
                 <img src="res/img/shield.png" alt="Un icône de bouclier" width="250" height="250" decoding="async"
                     loading="lazy">
-            </div>
+            </figure>
         </section>
 
-        <section>
-            <h2>Classe</h2>
-
-            <p>Mage</p>
-            <img src="res/img/wizard.png" alt="Un chapeau de mage" width="250" height="250" decoding="async"
-                loading="lazy">
-        </section>
-
-        <section>
+        <section id="backstory">
             <h2>Description du Joueur</h2>
 
             <p>
@@ -90,16 +85,16 @@
             </p>
         </section>
 
-        <section>
+        <section id="inventory">
             <h2>Inventaire</h2>
 
             <table>
                 <colgroup>
-                    <col class="even-col">
-                    <col class="odd-col">
-                    <col class="even-col">
-                    <col class="odd-col">
-                    <col class="even-col">
+                    <col class="col-0">
+                    <col class="col-1">
+                    <col class="col-2">
+                    <col class="col-3">
+                    <col class="col-4">
                 </colgroup>
                 <thead>
                     <tr>
@@ -146,16 +141,16 @@
             </table>
         </section>
 
-        <section>
+        <section id="spells">
             <h2>Sorts Magiques</h2>
 
             <table>
                 <colgroup>
-                    <col class="even-col">
-                    <col class="odd-col">
-                    <col class="even-col">
-                    <col class="odd-col">
-                    <col class="even-col">
+                    <col class="col-0">
+                    <col class="col-1">
+                    <col class="col-2">
+                    <col class="col-3">
+                    <col class="col-4">
                 </colgroup>
                 <thead>
                     <tr>
@@ -218,8 +213,8 @@
             </table>
         </section>
         <footer>
-            <a href="LICENSE" hreflang="en" rel="license" type="text/plain" target="_blank"
-                referrerpolicy="same-origin">License</a>
+            <a href="LICENSE" hreflang="en" rel="license" type="text/plain" target="_blank" referrerpolicy="same-origin"
+                title="La license de ce document HTML">License</a>
         </footer>
     </main>
 </body>
