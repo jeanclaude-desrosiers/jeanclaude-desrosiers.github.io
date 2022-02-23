@@ -1,78 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-CA">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+    <meta name="author" content="Jean-Claude Desrosiers">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="../css/index.css">
-  <title>Jean-Claude</title>
-  <link rel="icon" type="image/x-icon" href="../res/glasses.ico">
+    <title>Jean-Claude</title>
+
+    <!-- For the favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../res/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../res/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../res/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../res/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row justify-content-end">
-      <div class="col-md-auto">
-        <a href="../index.html" role="button" class="btn btn-primary btn-lg">Français</a>
-      </div>
-    </div>
-    <div class="row align-items-center">
-      <div class="col-md-4">
-        <img src="../res/profile.jpg" alt="That's me!" class="img-thumbnail">
-      </div>
-      <div class="col-md-8">
-        <h1 class="display-1">Hi there</h1>
-        <hr>
-        <div class="row justify-content-around">
-          <div class="col-md-auto text-center">
-            <p>Passionate nerd</p>
-          </div>
-          <div class="col-md-auto text-center"> <span>&amp</span></div>
-          <div class="col-md-auto text-center">
-            <p>Loves puns</p>
-          </div>
-          <div class="col-md-auto text-center"> <span>&amp</span></div>
-          <div class="col-md-auto text-center">
-            <p>Likes people</p>
-          </div>
-        </div>
-        <hr>
-        <div class="row justify-content-center">
-          <div class="col-md-auto">
-            <p>My name's Jean-Claude</p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-auto">
-            <p>I am a software developper studying computer science at Université de Montréal</p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-auto">
-            <p>I'm always up for a challenge</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col text-center">
-            <a href="https://raw.githubusercontent.com/jeanclaude-desrosiers/my-cv/master/en/resume.pdf" class="card-link">
-              <img src="../res/doc.png" alt="cv" class="img-link">
+    <main>
+        <nav>
+            <a href="https://raw.githubusercontent.com/jeanclaude-desrosiers/my-cv/master/en/resume.pdf"
+                hreflang="en-CA" type="application/pdf" target="_blank" title="My Resume">
+                Resume
             </a>
-          </div>
-          <div class="col text-center">
-            <a href="mailto: jean-claude.desrosiers@jclaude.xyz">
-              <img src="../res/mail.png" alt="email" class="img-link">
+            <a href="mailto:jean-claude.desrosiers@jclaude.xyz" title="My professional e-mail address">
+                E-Mail
             </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+            <a href="../index.html" hreflang="fr-CA" rel="alternate" type="text/html" target="_self"
+                referrerpolicy="same-origin" title="Accéder à cette page en français">Français</a>
+        </nav>
 
-</html>
+        <header>
+            <!-- width/height is used so that, the page won't jitter around when the image is loading -->
+            <img src="../res/img/profile.jpg" alt="That's me!" width="500" height="500" decoding="async" loading="lazy">
+
+            <h1>Player's Name : <span class="written">Jean-Claude</span></h1>
+        </header>
+
+        <section id="attributes">
+            <h2>Attributes</h2>
+
+            <figure class="attribute">
+                <figcaption>Class<br><span class="written">Wizard</span></figcaption>
+                <img src="../res/img/wizard.png" alt="A wizard's hat" width="250" height="250" decoding="async"
+                    loading="lazy">
+            </figure>
+            <figure class="attribute">
+                <figcaption>Health Points<br><span class="written">42</span></figcaption>
+                <img src="../res/img/hp.png" alt="A red heart" width="250" height="250" decoding="async" loading="lazy">
+            </figure>
+            <figure class="attribute">
+                <figcaption>Speed<br><span class="written">25</span></figcaption>
+                <img src="../res/img/speed.png" alt="Running stick figure" width="250" height="250" decoding="async"
+                    loading="lazy">
+            </figure>
+            <figure class="attribute">
+                <figcaption>Armor<br><span class="written">14</span></figcaption>
+                <img src="../res/img/shield.png" alt="Drawing of a shield" width="250" height="250" decoding="async"
+                    loading="lazy">
+            </figure>
+        </section>
+
+        <section id="backstory">
+            <h2>Player Backstory</h2>
+
+            <p>
+                A long time ago in a region far, far away ... a young adventurer in quest for knowledge was for the
+                exploration of new worlds
+            </p>
+            <p>
+                With his training at the computer science and mathematics school of Hogwarts, he knew the right spells
+                and formulas to defeat complex problems. And, even though he had very little experience using this
+                magic, his resolve and desire to learn would certainly help him.
+            </p>
+            <p>
+                Be it the astonishing caverns of low-level programming, the enchanting world of machine-learning or the
+                grandiose cities of software development, Jean-Claude was ready
+            </p>
+            <p>
+                Between his adventures, he liked tabletop games, outdoor activities, spending time with his loved ones
+                or crack a mathematical problem.
+            </p>
+        </section>
+
+        <section id="inventory">
+            <h2>Inventory</h2>
+
+            <table>
+                <colgroup>
+                    <col class="col-0">
+                    <col class="col-1">
+                    <col class="col-2">
+                    <col class="col-3">
+                    <col class="col-4">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Name</th>
+                        <th>Weight</th>
+                        <th>Description</th>
+                        <th>Effect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ring</td>
+                        <td>The One Ring</td>
+                        <td>1kg</td>
+                        <td>You start hearing voices as soon as you put it on, makes you want to go someplace hot</td>
+                        <td>Confused state</td>
+                    </tr>
+                    <tr>
+                        <td>Armor</td>
+                        <td>Nerd t-shirt</td>
+                        <td>3kg</td>
+                        <td>Even though you like this shirt, it certainly isn't stylish</td>
+                        <td>-5 charisma</td>
+                    </tr>
+                    <tr>
+                        <td>Divers</td>
+                        <td><a href="https://rubberduckdebugging.com/" hreflang="en" type="text/html" target="_blank"
+                                referrerpolicy="no-referrer">Rubber duck</a></td>
+                        <td>1kg</td>
+                        <td>The mysterious power of this normal-looking duck grants you intellectual prowess</td>
+                        <td>+2 intelligence</td>
+                    </tr>
+                    <tr>
+                        <td>Weapon</td>
+                        <td>Computer</td>
+                        <td>2kg</td>
+                        <td>This computer is used to cast most of your spells</td>
+                        <td>+3 power</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="spells">
+            <h2>Magic Spells</h2>
+
+            <table>
+                <colgroup>
+                    <col class="col-0">
+                    <col class="col-1">
+                    <col class="col-2">
+                    <col class="col-3">
+                    <col class="col-4">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Cost</th>
+                        <th>Name</th>
+                        <th>Range</th>
+                        <th>Description</th>
+                        <th>Effect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>25</td>
+                        <td>Excel... huh?</td>
+                        <td>35m</td>
+                        <td>You force the target to setup a database in Excel</td>
+                        <td>15 psychic dammage</td>
+                    </tr>
+                    <tr>
+                        <td>375</td>
+                        <td>//</td>
+                        <td>75m</td>
+                        <td>You elegantly comment your code, inspiring your allies</td>
+                        <td>+50% courage allies in range</td>
+                    </tr>
+                    <tr>
+                        <td>150</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Fork_bomb" hreflang="en" type="text/html"
+                                target="_blank" referrerpolicy="no-referrer">Fork Bomb</a></td>
+                        <td>20m</td>
+                        <td>All of the target's resources are consumed by their existential questions</td>
+                        <td>Target becomes paralysed</td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>USB Type-A</td>
+                        <td>60m</td>
+                        <td>The target must flip its weapon 3 times before using it again</td>
+                        <td>Target loses their next turn</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Agile_software_development" hreflang="en"
+                                type="text/html" target="_blank" referrerpolicy="no-referrer">Agilité</a></td>
+                        <td>Self</td>
+                        <td>Your methodology helps you keep track of the opponent's movements</td>
+                        <td>+5 dexterity until next turn</td>
+                    </tr>
+                    <tr>
+                        <td>250</td>
+                        <td><a href="https://fr.wikipedia.org/wiki/Pointeur_(programmation)" hreflang="fr"
+                                type="text/html" target="_blank" referrerpolicy="no-referrer">Pointeur</a></td>
+                        <td>60m</td>
+                        <td>Your "<a href="https://linux.die.net/man/3/realloc" hreflang="en" type="text/html"
+                                target="_blank" referrerpolicy="no-referrer">realloc()</a>" succeeds on the target
+                        </td>
+                        <td>Target is teleported at the location you point</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <a href="../LICENSE" hreflang="en" rel="license" type="text/plain" target="_blank"
+                referrerpolicy="same-origin" title="La license de ce document HTML">License</a>
+        </footer>
+    </main>
+</body>
