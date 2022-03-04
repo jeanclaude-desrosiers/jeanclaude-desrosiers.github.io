@@ -1,29 +1,29 @@
 :root {
-  --page-bg-color: #fafefe;
+  --page-bg-color: #fcf6f4;
   --page-txt-color: #000000;
 
-  --profile-border-color: #dcdcf5;
+  --profile-border-color: #dcd8f0;
 
-  --section-bg-color: #f5f5dc;
-  --section-border-color: #dcdcf5;
+  --section-bg-color: #bcb8d0;
+  --section-border-color: #f1d8c7;
   --section-txt-color: #000000;
 
-  --attr-bg-color: #eed9c4;
+  --attr-bg-color: #dcd8f0;
   --attr-txt-color: #000000;
   --attr_txt-bg-color: rgba(255, 255, 255, 0.5);
   --attr_txt-bg-color-active: #f0f0f0;
 
-  --table_hdr-bg-color: #b5b59c;
-  --table_hdr-txt-color: #000000;
+  --table_hdr-bg-color: #3e3856;
+  --table_hdr-txt-color: #ffffff;
 
-  --table_even-bg-color: #e5e5cc;
+  --table_even-bg-color: #c8a695;
   --table_even-txt-color: #000000;
-  --table_even-bg-color-active: #e8e8cf;
+  --table_even-bg-color-active: #e4ccc0;
   --table_even-txt-color-active: #000000;
 
-  --table_odd-bg-color: #d5d5bc;
+  --table_odd-bg-color: #d6b9ab;
   --table_odd-txt-color: #000000;
-  --table_odd-bg-color-active: #d8d8bf;
+  --table_odd-bg-color-active: #f1dfd6;
   --table_odd-txt-color-active: #000000;
 }
 
@@ -44,6 +44,9 @@ html, body {
   height: 100%;
   width: 100%;
 
+  background-image: url(../res/img/background-repeat.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
   background-color: var(--page-bg-color);
   color: var(--page-txt-color);
 }
@@ -92,23 +95,25 @@ main {
 
 nav, footer {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 
   justify-content: space-evenly;
   align-items: center;
 
-  padding: 15px 5vw;
-  column-gap: 15px;
+  padding: 30px 5vw;
+  gap: 25px;
 }
 
 nav>a, footer>a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 2rem;
+  font-weight: bold;
 
   border-bottom: 1px solid black;
 
   padding: 10px 5px;
-  width: 200px;
+  width: 250px;
+  background-color: var(--page-bg-color);
 
   text-align: center;
   transition: all 0.25s ease-in-out;
